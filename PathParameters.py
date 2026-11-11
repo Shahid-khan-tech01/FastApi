@@ -2,7 +2,8 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-# For creating the dynamic routes
+# For creating the dynamic routes 
+# Add ? after the user_id to make it optional.
 @app.get("/user/{user_id}")
 
 # using of the path parameter as integer
